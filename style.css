@@ -1,0 +1,362 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+#body-header {
+    z-index: 1000;
+}
+
+.navBar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    z-index: 1000;
+}
+
+nav.sticky {
+    background-color: #fff;
+    transition: 0.9s;
+}
+
+.navBar span {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    font-size: 2.3rem;
+    padding: 2px 45px;
+    letter-spacing: 1px;
+    transition: 0.6s;
+}
+
+.navBar ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 45px;
+}
+
+.navBar ul li {
+    position: relative;
+    margin: 0px 10px;
+}
+
+.navBar ul li a {
+    text-decoration: none;
+    color: linen;
+    font-weight: 600;
+    transition: 0.6s;
+}
+
+nav.sticky ul li a,
+nav.sticky span {
+    color: #000;
+}
+
+.navBar ul li a:hover {
+    text-decoration: underline;
+    color: darkgrey;
+    transition: color 0.4s;
+}
+
+main {
+    position: relative;
+}
+
+/* section classes */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+
+.heading {
+    color: #2857a4;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.heading i {
+    margin-right: 20px;
+    font-size: 2.3rem;
+}
+
+/* home */
+#home {
+    background-image: url(images/bg1.jpg);
+    height: 60vh;
+    opacity: 0.9;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 10px;
+}
+
+/* Name and Social icons */
+#name-container {
+    margin-top: 15vh;
+}
+
+#my-name {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.social-icons {
+    margin-top: -20px;
+}
+
+.social-icons li {
+    border-radius: 50%;
+}
+
+.social-icons li a i {
+    width: 1.5rem;
+    padding: 0.4rem;
+    color: white;
+    font-size: 1.49rem;
+}
+
+.social-icons li:hover {
+    box-shadow: 0px 0px 10px 6px rgba(230, 196, 196, 0.3);
+}
+
+/* horizontal list */
+.horizontal-list {
+    margin: 0px;
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* about */
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.image {
+    height: 13rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -15vh;
+}
+
+.image img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    /* box-shadow: 0px 0px 6px 2px lightgray; */
+    filter: drop-shadow(0px 0px 10px black);
+}
+
+.para {
+    color: grey;
+    margin: 15px 160px 30px 160px;
+    font-size: 1.1rem;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.05rem;
+    line-height: 28px;
+}
+
+.para p span.highlight {
+    color: #2857a4;
+}
+
+
+/* skills */
+
+#design-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 75%;
+    margin: 60px;
+    padding: 10px;
+}
+
+div.design {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.07rem;
+    border: 2px solid;
+    width: 200px;
+    margin: 20px;
+    border-radius: 20px;
+    /* background-color: aqua; */
+}
+
+/* Education */
+
+.edDisplay {
+    position: relative;
+    width: 75%;
+    margin-left: 70px;
+}
+
+.edImages {
+    position: absolute;
+    width: 60px;
+    overflow: hidden;
+}
+
+.edImages>img {
+    width: 100%;
+}
+
+.edContainer {
+    position: relative;
+    width: 32%;
+    text-align: right;
+    min-height: 150px;
+    padding: 10px;
+}
+
+.edContainer:nth-child(2n)::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: lightgray;
+    position: absolute;
+    top: 18%;
+    left: -16.5%;
+    z-index: 1;
+}
+
+.edContainer:nth-child(2n-1)::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: lightslategray;
+    position: absolute;
+    top: 14%;
+    right: -35%;
+    z-index: 1;
+}
+
+.pos:nth-child(2n) {
+    left: 50%;
+}
+
+.timeline {
+    position: absolute;
+    width: 0px;
+    border: 2px dashed #1d50b7;
+    height: 66%;
+    left: 45%;
+    top: 6%;
+}
+
+.timeline .timeline-icon {
+    /* rotate: 90deg; */
+    transform: rotate(90deg);
+    position: sticky;
+    top: 30%;
+    z-index: 2;
+}
+
+.timeline-icon i {
+    font-size: 2rem;
+    color: #1d50b5;
+    margin-left: -12px;
+    margin-top: -1px;
+}
+
+
+.edTitle {
+    font-size: 1.4rem;
+    color: #2857a4;
+    margin: 2px;
+}
+
+.edName {
+    margin: 10px 0 0;
+    color: #eb8432;
+}
+
+.edYear {
+    margin: 8px 0 0;
+}
+
+#contact {
+    background: linear-gradient(270deg, hsl(240, 2%, 17%) 0%, hsl(0, 0%, 92%) 50%);
+    color: transparent;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container {
+    width: 60%;
+    border: 2px solid;
+}
+
+.form-container form button[type=submit] {
+    padding: 3px 5px;
+    font-size: 1.2rem;
+    text-align: right;
+    position: relative;
+    left: 50%;
+
+}
+
+.details {
+    width: 25%;
+    color: whitesmoke;
+}
+
+form input,
+textarea {
+    width: 90%;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid;
+    margin-bottom: 10px;
+    padding: 2px 6px;
+    font-size: 1rem;
+    line-height: 2.6;
+}
+
+#contact .social-container {
+    margin: 50px;
+}
